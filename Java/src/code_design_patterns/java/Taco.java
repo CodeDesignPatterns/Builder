@@ -8,7 +8,7 @@ public class Taco {
   private final boolean vegan;
   private final boolean salad;
 
-  private Taco(TacoBuilder builder) {
+  private Taco(Builder builder) {
     this.meat = builder.meat;
     this.cheese = builder.cheese;
     this.shell = builder.shell;
@@ -47,33 +47,33 @@ public class Taco {
             '}';
   }
 
-  public static class TacoBuilder {
+  public static class Builder {
     private String meat;
     private String cheese;
     private String shell;
     private boolean vegan;
     private boolean salad;
 
-    public TacoBuilder meat(String meat) {
+    public Builder meat(String meat) {
       this.meat = meat;
       return this;
     }
-    public TacoBuilder cheese(String cheese) {
+    public Builder cheese(String cheese) {
       this.cheese = cheese;
       return this;
     }
 
-    public TacoBuilder shell(String shell) {
+    public Builder shell(String shell) {
       this.shell = shell;
       return this;
     }
 
-    public TacoBuilder vegan(boolean vegan) {
+    public Builder vegan(boolean vegan) {
       this.vegan = vegan;
       return this;
     }
 
-    public TacoBuilder salad(boolean salad) {
+    public Builder salad(boolean salad) {
       this.salad = salad;
       return this;
     }

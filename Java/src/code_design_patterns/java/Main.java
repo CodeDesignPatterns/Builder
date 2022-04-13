@@ -3,7 +3,7 @@ package code_design_patterns.java;
 public class Main {
 
   public static void main(String[] args) {
-    Taco taco = new Taco.TacoBuilder()
+    Taco taco = new Taco.Builder()
             .meat("Beef")
             .cheese("Tasty")
             .shell("Hard")
