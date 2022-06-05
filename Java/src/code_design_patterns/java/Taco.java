@@ -79,8 +79,10 @@ public class Taco {
     }
 
     public Taco build(){
-      Taco taco = new Taco(this);
-      return taco;
+      if (meat == null || cheese == null || shell == null) {
+        throw new IllegalStateException("You must set all properties");
+      }
+      return new Taco(this);
     }
 
   }
