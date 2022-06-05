@@ -32,12 +32,7 @@ var TacoBuilder = /** @class */ (function () {
         return this;
     };
     TacoBuilder.prototype.build = function () {
-        if (this._taco.meat === "") {
-            return null;
-        }
-        else {
-            return this._taco;
-        }
+        return this._taco;
     };
     return TacoBuilder;
 }());

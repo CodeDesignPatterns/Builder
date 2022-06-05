@@ -1,4 +1,4 @@
-import { Taco } from "./taco";
+import { Taco } from "./Taco";
 
 export class TacoBuilder {
     private readonly _taco: Taco;
@@ -38,10 +38,8 @@ export class TacoBuilder {
 
 
     build(): Taco {
-        if (this._taco.meat === "") {
-            return null;
-        } else {
-            return this._taco;
-        }
+
+        return this._taco;
     }
 }
+
