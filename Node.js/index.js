@@ -2,11 +2,11 @@
 import Taco from './Taco.js';
 // build a taco
 const taco = new Taco.Builder()
-  .setMeat('beef')
-  .setCheese('cheddar')
-  .setShell('flour')
-  .setVegan(false)
-  .setSalad(false)
+  .meat('beef')
+  .cheese('cheddar')
+  .shell('flour')
+  .vegan(false)
+  .salad(false)
   .build();
 
 console.log(taco.toString());
