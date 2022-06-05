@@ -1,8 +1,8 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.TacoBuilder = void 0;
-var TacoBuilder = /** @class */ (function () {
-    function TacoBuilder() {
+class TacoBuilder {
+    constructor() {
         this._taco = {
             meat: "",
             cheese: "",
@@ -11,29 +11,28 @@ var TacoBuilder = /** @class */ (function () {
             salad: false
         };
     }
-    TacoBuilder.prototype.meat = function (meat) {
+    meat(meat) {
         this._taco.meat = meat;
         return this;
-    };
-    TacoBuilder.prototype.cheese = function (cheese) {
+    }
+    cheese(cheese) {
         this._taco.cheese = cheese;
         return this;
-    };
-    TacoBuilder.prototype.shell = function (shell) {
+    }
+    shell(shell) {
         this._taco.shell = shell;
         return this;
-    };
-    TacoBuilder.prototype.vegan = function (vegan) {
+    }
+    vegan(vegan) {
         this._taco.vegan = vegan;
         return this;
-    };
-    TacoBuilder.prototype.salad = function (salad) {
+    }
+    salad(salad) {
         this._taco.salad = salad;
         return this;
-    };
-    TacoBuilder.prototype.build = function () {
+    }
+    build() {
         return this._taco;
-    };
-    return TacoBuilder;
-}());
+    }
+}
 exports.TacoBuilder = TacoBuilder;
