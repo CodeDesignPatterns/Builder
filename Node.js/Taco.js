@@ -34,4 +34,4 @@ class Builder {
         return this._taco;
     }
 }
-export const TacoBuilder = TacoBuilder;
+export const Builder = Builder;
