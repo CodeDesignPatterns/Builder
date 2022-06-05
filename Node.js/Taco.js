@@ -12,27 +12,27 @@ class Taco {
     #vegan = false;
     #salad = false;
 
-    setMeat(meat) {
+    meat(meat) {
       this.#meat = meat;
       return this;
     }
 
-    setCheese(cheese) {
+    cheese(cheese) {
       this.#cheese = cheese;
       return this;
     }
 
-    setShell(shell) {
+    shell(shell) {
       this.#shell = shell;
       return this;
     }
 
-    setVegan(vegan) {
+    vegan(vegan) {
       this.#vegan = vegan;
       return this;
     }
 
-    setSalad(salad) {
+    salad(salad) {
       this.#salad = salad;
       return this;
     }
