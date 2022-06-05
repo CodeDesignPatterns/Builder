@@ -1,0 +1,12 @@
+{
+  "name": "taco",
+  "version": "1.0.0",
+  "description": "taco builder",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "main"
+  },
+  "author": "",
+  "license": "ISC"
+}
