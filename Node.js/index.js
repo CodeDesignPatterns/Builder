@@ -1,10 +1,12 @@
-import { taco } from "./Taco.js";
+// import taco
+import Taco from './Taco.js';
+// build a taco
+const taco = new Taco.Builder()
+  .setMeat('beef')
+  .setCheese('cheddar')
+  .setShell('flour')
+  .setVegan(false)
+  .setSalad(false)
+  .build();
 
-var tacoNew = new taco()
-    .meat("chicken")
-    .cheese("cheddar")
-    .shell("hard")
-    .vegan(false)
-    .salad(true);
-
-console.log(taco);
+console.log(taco.toString());
